@@ -30,4 +30,11 @@ Backed API: http://localhost:5000/query
 DATABASE_URL=mysql+mysqlconnector://tarun:tarun2000@localhost:3306/test
 ```
 
+LLM Software used: OLLAMA
+Model: mistral
+
+```bash
+ollama run mistral
+```
+
 
