@@ -1,0 +1,12 @@
+services:
+  mysql:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: tarun2000
+      MYSQL_USER: tarun 
+      MYSQL_PASSWORD: tarun2000
+      MYSQL_DATABASE: test
+    volumes:
+      - ./server/migrations/init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "3306:3306"
